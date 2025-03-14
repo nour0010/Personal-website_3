@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- navebar -->
+      <nav>
+        <a class="logo" href="">logo</a>
+        <ul>
+          <li onclick="off()"><a href="#" >home</a></li>
+          <li onclick="obenAbout()"><a href="#" >about</a></li>
+          <li onclick="obenMyWorks()"><a href="#">My works</a></li>
+        </ul>
+      </nav>
+      <div class="Personal">
+
+      
+      <!-- صورتي الشخصيه -->
+       <div class="profile">
+      <img
+        src="picture_profile.png"
+        
+        alt=""
+        class="profile_picture"
+      />
+    </div>
+    
+      
+    <div class="content">
+      <div class="socialMedia">
+       <a href="#"><i class='bx bxl-instagram'></i></a> 
+       <a href="#"><i class='bx bxl-tiktok'></i></a> 
+       <a href="#"><i class='bx bxl-facebook'></i></a> 
+      </div>
+      <!-- تعريف عن اسمي -->
+      <h1>hi, my name is zack</h1>
+      <!-- كلام عني -->
+      <p class="Me">
+        I am a Computer Science student, interested in programming and
+        technology. I strive to gain the skills needed to develop innovative
+        software solutions and make an impact in the tech world.
+      </p>
+      <button id="Abtn" onclick="obenAbout()">about</button>
+    </div>
+    
+    </div>
+     <div class="about">
+      <div class="informations">
+        <!-- شهاداتي -->
+        <div class="Certificates">
+          <h2>Certificates</h2>
+          <p>
+            I have certifications in programming and modern technologies,
+            covering areas such as web development, artificial intelligence, and
+            cybersecurity.
+          </p>
+        </div>
+        <!-- تخصصي -->
+        <div class="specialty">
+          <h2>specialty</h2>
+          <p>
+            My major is Computer Science, focusing on programming, artificial
+            intelligence, cybersecurity, and software engineering. It aims to
+            develop efficient tech solutions, analyze data, and build
+            intelligent systems.
+          </p>
+        </div>
+        <!-- خبراتي -->
+        <div class="Experiences">
+          <h2>Experiences</h2>
+          <p>
+            I have experience in programming and web development, with knowledge
+            in artificial intelligence and cybersecurity. I have worked on
+            various projects that enhance my skills in building efficient
+            systems and applications.
+          </p>
+        </div>
+      </div>
+     </div>
+     <div class="MyWorks">
+      <div class="projects">
+       <a href="#">
+        <div class="imgDiv"><img src="" alt="project_1"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cumque incidunt aliquam molestiae minima dolor quis ea iure ad modi.</p>
+       </a>
+
+       <a href="#">
+        <div class="imgDiv"><img src="" alt="project_2"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cumque incidunt aliquam molestiae minima dolor quis ea iure ad modi.</p>
+       </a>
+
+       <a href="#">
+        <div class="imgDiv"><img src="" alt="project_3"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cumque incidunt aliquam molestiae minima dolor quis ea iure ad modi.</p>
+       </a>
+
+     </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

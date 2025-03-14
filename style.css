@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Madimi One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: rgb(255, 166, 0);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    
+}
+::selection{
+background: rgb(255, 228, 196);
+
+}
+.container{
+    position: relative;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 0.4px rgba(0, 0, 0, 0.331);
+   
+   
+}
+a{
+ text-decoration: none;
+ color: black;
+}
+/* navebar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 15px;
+    position: absolute;
+    z-index: 12;
+}
+/* logo navebar */
+nav .logo{
+    font-size: 35px;
+}
+/* home ,about,My works navebar */
+nav ul{
+display: flex;
+justify-content: space-around;
+width: 50%;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    border: 4px solid rgba(255, 255, 255, 0);
+    transition: 0.5s;
+}
+nav ul li:hover{
+    border: 4px solid orange;
+    border-radius: 20px;
+    background-color: white;
+}
+.Personal{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 130px 0 80px 0;
+    flex-wrap: wrap;
+}
+/* profile_picture style */
+
+.profile_picture{
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.534);background-color: orange;
+    width:250px;
+    margin: 0 10px;
+}
+.socialMedia a i{
+    font-size: 20px;
+    margin: 0px 5px;
+
+}
+.content{
+    text-align: start;
+    width: 500px;
+    
+}
+.content h1{
+    margin: 10px;
+}
+.content button{
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    outline: none;
+    border-radius: 20px;
+    background-color: orange;
+    border: 2px solid black;
+    font-size: 18px;
+    transition: 0.5s;
+    
+}
+
+.content button:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.about,.MyWorks{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    height: 61px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0px -2px 20px 0.4px rgba(0, 0, 0, 0.517);
+    transition: 1s;
+    
+}
+.MyWorks{
+    height:31px ;
+}
+.informations,.projects{
+    width: 100%; 
+    margin: 40px 0;
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    animation: infor 1s ease 0s forwards ;
+
+ }
+ .projects{
+    animation: pro 1.5s ease 0s forwards ;
+    opacity: 0;
+ }
+ @keyframes pro{
+    0%{
+        translate: 0px 70px;
+    }
+    100%{
+        opacity: 1;
+       
+    }
+}
+ .informations div{
+  width: 400px;
+  background-color: #ffae00c7;
+  border-radius: 20px;
+  text-align: center;
+ }
+ 
+
+ .informations div p{
+ padding: 15px;
+ margin: 10px;
+ min-height: 120px;
+ border: 2px solid rgba(255, 255, 255, 0.604);
+ border-radius: 20px;
+ background-color: #ebe5c2ce;
+ }
+
+ .Certificates{
+     opacity: 0;
+     animation: Cer 2s ease 0s forwards ;
+ }
+ @keyframes Cer{
+     0%{
+         translate: 0px 70px;
+     }
+     100%{
+         opacity: 1;
+        
+     }
+ }
+ .specialty{
+     opacity: 0;
+     animation: spe 2s ease 0.5s forwards ;
+ }
+ @keyframes spe{
+     0%{
+         translate: 0px 70px;
+     }
+     100%{
+         opacity: 1;
+        
+     }
+ }
+ .Experiences{
+     opacity: 0;
+     animation: Exp 2s ease 1s forwards ;
+ }
+ @keyframes Exp{
+     0%{
+         translate: 0px 70px;
+     }
+     100%{
+         opacity: 1;
+        
+     }
+ }
+ .MyWorks .projects a{
+    background-color:orange;
+    width: 400px;
+    border-radius: 20px;
+ }
+ .MyWorks .projects a .imgDiv{
+border-radius: 20px 20px 0px 0px ;
+    height: 150px;
+    background-color: rgb(156, 113, 32);
+ }
+ .MyWorks .projects a .imgDiv img{
+    object-fit: cover;
+ }
+ .MyWorks .projects a p{
+    margin: 10px;
+ }
+ @media (max-width:912px) {
+    .informations div{
+        width: 47%;
+        background-color: #ffae00c7;
+        border-radius: 20px;
+        text-align: center;
+       }
+       .MyWorks .projects a{
+        background-color:orange;
+        width: 47%;
+        border-radius: 20px;
+     }
+     }
+
+
+
+
+
+         @media (max-width:850px) {
+            body{
+                background-color: rgb(255, 166, 0);
+                display: flex;
+                justify-content: center; 
+            }
+            
+            
+            .container{
+                position: relative;
+                width: 100%;
+                background-color: rgb(255, 255, 255);
+                margin: 20px;
+                height: 130%;
+                border-radius: 20px;
+                box-shadow: 1px 1px 20px 0.4px rgba(0, 0, 0, 0.331);
+               
+               
+            }
+            .Personal{
+    
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: row-reverse;
+                margin: 160px 0 80px 0;
+                flex-wrap: wrap;
+            }
+            /* profile_picture style */
+            
+            .profile_picture{
+                border-radius: 50px;
+                border: 2px solid rgba(255, 255, 255, 0.534);background-color: orange;
+                width:200px;
+                margin: 0 100px;
+            }
+            .socialMedia a i{
+                font-size: 20px;
+                margin: 10px;
+            
+            }
+            .content{
+                text-align: center;
+                width: 500px;
+                
+            }
+            .informations div{
+                width: 400px;
+                background-color: #ffae00c7;
+                border-radius: 20px;
+                text-align: center;
+               }
+               .MyWorks .projects a{
+                background-color:orange;
+                width: 400px;
+                border-radius: 20px;
+             }
+             }
+             @media (max-width:650px) {
+                .profile_picture{
+                    border-radius: 50px;
+                    border: 2px solid rgba(255, 255, 255, 0.534);background-color: orange;
+                    width:200px;
+                    margin: 0 ;
+                    
+                }
+
+
+
+
+
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                   }
+                   /* navebar */
+                   nav{
+                       display: flex;
+                       align-items: center;
+                       justify-content: space-between;
+                       width: 95%;
+                       margin: 15px;
+                       position: absolute;
+                       z-index: 12;
+                   }
+                   /* logo navebar */
+                   nav .logo{
+                       font-size: 35px;
+                   }
+                   /* home ,about,My works navebar */
+                   nav ul{
+                   display: flex;
+                   justify-content: space-around;
+                   width: 90%;
+                   }
+                   nav ul li{
+                       list-style: none;
+                       padding: 10px;
+                       border: 4px solid rgba(255, 255, 255, 0);
+                       transition: 0.5s;
+                   }
+                  
+             }
+             
+ 
