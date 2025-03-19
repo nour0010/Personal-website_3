@@ -8,7 +8,7 @@
 
 body{
     background-color: rgb(255, 166, 0);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
 
@@ -23,7 +23,6 @@ background: rgb(255, 228, 196);
     width: 100%;
     background-color: rgb(255, 255, 255);
     margin: 20px;
-    
     border-radius: 20px;
     box-shadow: 1px 1px 20px 0.4px rgba(0, 0, 0, 0.331);
    
@@ -241,11 +240,7 @@ border-radius: 20px 20px 0px 0px ;
 
 
          @media (max-width:850px) {
-            body{
-                background-color: rgb(255, 166, 0);
-                display: flex;
-                justify-content: center; 
-            }
+            
             
             
             .container{
@@ -253,7 +248,7 @@ border-radius: 20px 20px 0px 0px ;
                 width: 100%;
                 background-color: rgb(255, 255, 255);
                 margin: 20px;
-                height: 130%;
+                
                 border-radius: 20px;
                 box-shadow: 1px 1px 20px 0.4px rgba(0, 0, 0, 0.331);
                
@@ -285,6 +280,10 @@ border-radius: 20px 20px 0px 0px ;
                 text-align: center;
                 width: 500px;
                 
+            }
+            .informations,.MyWorks{
+                height: 90%;
+                overflow: auto;
             }
             .informations div{
                 width: 400px;
@@ -344,5 +343,3 @@ border-radius: 20px 20px 0px 0px ;
                    }
                   
              }
-             
- 
